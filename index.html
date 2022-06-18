@@ -12,7 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <div class="scroll-up-btn">
@@ -36,21 +36,22 @@
 
     <!-- home section start -->
     <section class="home" id="home">
-        <div class="max-width">
-            <div class="home-content">
+        <div class="max-width" data-aos="fade-up" data-aos-delay="300">
+            <div class="home-content"  >
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Rajeev Lochan Dash</div>
                 <div class="text-3">And I'm a <span class="typing"></span></div>
                 <a href="https://www.linkedin.com/in/rajeevlochandash/" target = "_blank">Linkedin</a>
                 <a href="https://github.com/RajeevDash007" target = "_blank">GitHub</a>
                 <a href="https://www.codechef.com/users/rajeevdash007" target = "_blank" >CodeChef</a>
+                 <a href="https://auth.geeksforgeeks.org/user/rajeevdash07/practice/" target = "_blank" >GeekforGeeks</a>
             </div>
         </div>
     </section>
 
     <!-- about section start -->
     <section class="about" id="about">
-        <div class="max-width">
+        <div class="max-width" data-aos="fade-left" data-aos-delay="200"  >
             <h2 class="title">About me</h2>
             <div class="about-content">
                 <div class="column left">
@@ -58,7 +59,7 @@
                 </div>
                 <div class="column right">
                     <div class="text">I'm Rajeev and I'm a <span class="typing-2"></span></div>
-                    <p>So, I am a Btech CSE undergrad at XIM University, I am now in my 2nd year of B-Tech. I have worked on various projects on API. I have a great interest on Blockchain technology and Full Stack(frontend and Backend). I have some interesting ideas to work on, simultaneously working on some live project, if you ever find some bugs or want to add some feature in my projects, just feel free to <a href="#contact" id="contact_me">contact me.</a> </p>
+                    <p>So, I am a Btech CSE undergrad at XIM University, I am now in my 2nd year of B-Tech. I have worked on various projects on API. I have a great interest on Blockchain technology and Full Stack(frontend and Backend).<br> <b>2 star</b> at CodeChef.<br> <b>Rank 1</b> in institute at Geekforgeeks<br> I have some interesting ideas to work on, simultaneously working on some live project, if you ever find some bugs or want to add some feature in my projects, just feel free to <a href="#contact" id="contact_me">contact me.</a> </p>
                     
                 </div>
             </div>
@@ -67,7 +68,7 @@
 
     <!-- services section start -->
     <section class="services" id="services">
-        <div class="max-width">
+        <div class="max-width" data-aos="fade-right" data-aos-delay="200">
             <h2 class="title">My Projects</h2>
             <div class="serv-content">
                 <div class="card">
@@ -84,7 +85,7 @@
                         <p>The Website which you are watching right now is one of my projects</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" hrf="https://github.com/RajeevDash007">
                     <div class="box">
                         <i class="fas fa-code"></i>
                         <div class="text">Working on more interesting Projects </div>
@@ -98,7 +99,7 @@
 
     <!-- skills section start -->
     <section class="skills" id="skills">
-        <div class="max-width">
+        <div class="max-width" data-aos="zoom-out-left" data-aos-delay="200" >
             <h2 class="title">My skills</h2>
             <div class="skills-content">
                 <div class="column left">
@@ -116,7 +117,8 @@
    
     <!-- contact section start -->
     <section class="contact" id="contact">
-        <div class="max-width">
+        <div class="max-width"
+        data-aos="slide-up" data-aos-delay="200">
             <h2 class="title">Contact me</h2>
             <div class="contact-content">
                 <div class="column left">
@@ -141,28 +143,28 @@
                             <i class="fas fa-envelope"></i>
                             <div class="info">
                                 <div class="head">Email</div>
-                                <div class="sub-title">rajeevdash07@gmail.com</div>
+                                <div class="sub-title">rajeevlochandash.projects@gmail.com</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="https://formsubmit.co/rajeevdash07@gmail.com" method="post">
+                    <form action="https://formsubmit.co/d66048a19bf4baab050e0039c7a140fa" method="post">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="May i know your name?" id="name" required>
+                                <input type="text" placeholder="May i know your name?" name="name" required>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Your mail id" id="email" required>
+                                <input type="email" placeholder="Your mail id" name="email" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Topic of your message" id="subject" required>
+                            <input type="text" placeholder="Topic of your message" name="subject" required>
                         </div>
                         <div class="field textarea">
                             <textarea cols="30" rows="10" placeholder="write your heart out"
-                            id="message" required></textarea>
+                            name="message" required></textarea>
                         </div>
                         <div class="button-area">
                             <button id="btn">Send message</button>
@@ -179,6 +181,10 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
     
 </body>
