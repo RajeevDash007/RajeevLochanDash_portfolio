@@ -6,9 +6,21 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    
+}
+html,body{
+    
+   margin:0px;
+   padding:0px;
+   height: 100%;
+   width: 100%;
+   
+    
 }
 html{
     scroll-behavior: smooth;
+    margin:0px;
+    padding:0px;
 }
 
 /* custom scroll bar */
@@ -82,13 +94,16 @@ section .title::after{
     position: fixed;
     width: 100%;
     z-index: 999;
-    padding: 30px 0;
+    padding: 20px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 }
+
+
 .navbar.sticky{
-    padding: 15px 0;
+    padding: 12px 0;
     background: crimson;
+   
 }
 .navbar .max-width{
     display: flex;
@@ -164,11 +179,13 @@ section .title::after{
 
 /* home section styling */
 .home{
-    display: flex;
+    display:flex;
     background: url("images/banner.jpg") no-repeat center;
     height: 100vh;
+    
     color: #fff;
     min-height: 500px;
+    
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
@@ -367,7 +384,7 @@ section .title::after{
     background: crimson;
 }
 .skills-content .right .html::before{
-    width: 90%;
+    width: 100%;
 }
 .skills-content .right .css::before{
     width: 60%;
@@ -498,6 +515,7 @@ footer span a:hover{
 
 /* responsive media query start */
 @media (max-width: 1104px) {
+    
     .about .about-content .left img{
         height: 350px;
         width: 350px;
@@ -505,11 +523,13 @@ footer span a:hover{
 }
 
 @media (max-width: 991px) {
+    
     .max-width{
         padding: 0 50px;
     }
 }
 @media (max-width: 947px){
+    
     .menu-btn{
         display: block;
         z-index: 999;
@@ -529,7 +549,7 @@ footer span a:hover{
         transition: all 0.3s ease;
     }
     .navbar .menu.active{
-        left: 0;
+        left: 500px;
     }
     .navbar .menu li{
         display: block;
@@ -538,6 +558,8 @@ footer span a:hover{
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
+        align-items: center;
+        margin-left: -55%;
     }
     .home .home-content .text-2{
         font-size: 70px;
@@ -575,6 +597,16 @@ footer span a:hover{
 }
 
 @media (max-width: 690px) {
+    .navbar .menu.active{
+        left: 250px;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 20px;
+        align-items: center;
+        margin-left: -65%;
+    }
     .max-width{
         padding: 0 23px;
     }
@@ -593,6 +625,7 @@ footer span a:hover{
 }
 
 @media (max-width: 500px) {
+    
     .home .home-content .text-2{
         font-size: 50px;
     }
