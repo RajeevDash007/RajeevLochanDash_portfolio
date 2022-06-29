@@ -177,6 +177,13 @@ section .title::after{
 }
 
 
+a.gfg{
+    margin-left: 20px;
+}
+a.github{
+    margin-left: 36px;
+}
+
 /* home section styling */
 .home{
     display:flex;
@@ -527,6 +534,7 @@ footer span a:hover{
     .max-width{
         padding: 0 50px;
     }
+    
 }
 @media (max-width: 947px){
     
@@ -621,6 +629,21 @@ footer span a:hover{
     }
     .services .serv-content .card{
         width: 100%;
+    }
+    a.linkedin{
+        margin-left: 38px;
+        margin-top: 100px;
+    }
+    a.gfg{
+     margin-left: 40px;   
+    }
+    a.codechef{
+        margin-left: 40px;
+        
+    }
+    a.github{
+        margin: 30px;
+        margin-left: 40px;
     }
 }
 
