@@ -102,7 +102,7 @@ section .title::after{
 
 .navbar.sticky{
     padding: 12px 0;
-    background: crimson;
+    background: #f7b733;
    
 }
 .navbar .max-width{
@@ -116,11 +116,14 @@ section .title::after{
     font-weight: 600;
 }
 .navbar .logo a span{
-    color: crimson;
+    color: #4717f6;
     transition: all 0.3s ease;
 }
+.navbar.sticky .logo a {
+    color:#4717f6 ;
+}
 .navbar.sticky .logo a span{
-    color: #fff;
+    color:#fff ;
 }
 .navbar .menu li{
     list-style: none;
@@ -187,7 +190,7 @@ a.github{
 /* home section styling */
 .home{
     display:flex;
-    background: url("images/banner.jpg") no-repeat center;
+    background-color: #140b43;
     height: 100vh;
     
     color: #fff;
@@ -211,13 +214,14 @@ a.github{
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
+    color:#ff3b3f;
 }
 .home .home-content .text-3{
     font-size: 40px;
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color:goldenrod;
+    color:#f7b733;
     font-weight: 500;
 }
 .home .home-content a{
@@ -239,7 +243,7 @@ a.github{
 
 /* about section styling */
 .about .title::after{
-    content: "who i am";
+    
 }
 .about .about-content .left{
     width: 45%;
@@ -283,9 +287,10 @@ a.github{
 
 /* services section styling */
 .services, .teams,.contact{
-    color:#fff;
+    color: white;
     background: #111;
 }
+
 .services .title::before,
 .teams .title::before{
     background: #fff;
@@ -293,7 +298,7 @@ a.github{
 .services .title::after,
 .teams .title::after{
     background: #111;
-    content: "what i provide";
+    
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -305,7 +310,7 @@ a.github{
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover{
-    background: crimson;
+    background: #140b43;
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
@@ -330,7 +335,7 @@ a.github{
 /* skills section styling */
 
 .skills .title::after{
-    content: "what i know";
+    
 }
 .skills .skills-content .column{
     width: calc(80% - 20px);
@@ -410,7 +415,7 @@ a.github{
 
 /* contact section styling */
 .contact .title::after{
-    content: "";
+    
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -527,6 +532,9 @@ footer span a:hover{
         height: 350px;
         width: 350px;
     }
+    .navbar .menu{
+        margin-right: 80px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -541,6 +549,13 @@ footer span a:hover{
     .menu-btn{
         display: block;
         z-index: 999;
+    }
+    ul.menu.active {
+        width: 550px;
+        line-height: 120px;
+    }
+    .scroll-up-btn{
+        right: 50px;
     }
     .menu-btn i.active:before{
         content: "\f00d";
@@ -558,16 +573,20 @@ footer span a:hover{
     }
     .navbar .menu.active{
         left: 500px;
+        
     }
     .navbar .menu li{
         display: block;
+        
     }
+    
     .navbar .menu li a{
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
         align-items: center;
         margin-left: -55%;
+        
     }
     .home .home-content .text-2{
         font-size: 70px;
@@ -670,7 +689,7 @@ footer span a:hover{
        width: 150px;
     }
     .scroll-up-btn{
-        right: 15px;
+        right: 30px;
         bottom: 15px;
         height: 38px;
         width: 35px;
@@ -678,3 +697,43 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+
+body {
+    
+    background-size: cover;
+    height: 100vh;
+    cursor: none;
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: calc(20px + 2vw);
+    font-weight: 700;
+    color: #fafafa;
+    text-shadow: 2px 2px 2px #000;
+    pointer-events: none;
+    user-select: none;
+    white-space: nowrap;
+}
+.spotlight {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: radial-gradient(
+        circle,
+        transparent 160px,
+        rgba(0, 0, 0, 0.85) 200px
+    );
+}
+
+#myVideo {
+    
+    height: 595px;
+    width: 3000px;
+    
+  }
