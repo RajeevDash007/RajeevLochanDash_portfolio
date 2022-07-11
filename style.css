@@ -191,7 +191,7 @@ a.github{
 .home{
     display:flex;
     background-color: #140b43;
-    height: 100vh;
+    height: 98vh;
     
     color: #fff;
     min-height: 500px;
@@ -542,6 +542,11 @@ footer span a:hover{
     .max-width{
         padding: 0 50px;
     }
+    .menu-btn{
+        display: block;
+        z-index: 999;
+        margin-right: 55px;
+    }
     
 }
 @media (max-width: 947px){
@@ -628,6 +633,11 @@ footer span a:hover{
     .navbar .menu.active{
         left: 250px;
     }
+    .menu-btn{
+        display: block;
+        z-index: 999;
+        margin-right: 55px;
+    }
     .navbar .menu li a{
         display: inline-block;
         margin: 20px 0;
@@ -672,6 +682,11 @@ footer span a:hover{
     .home .home-content .text-2{
         font-size: 50px;
     }
+    .menu-btn{
+        display: block;
+        z-index: 999;
+        margin-right: 55px;
+    }
     .home .home-content .text-3{
         font-size: 27px;
     }
@@ -700,10 +715,9 @@ footer span a:hover{
 }
 
 body {
-    
     background-size: cover;
-    height: 150vh;
-    cursor: none;
+    height:200px;
+    cursor: pointer;
 }
 
 h1 {
