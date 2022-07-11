@@ -194,14 +194,14 @@ a.github{
     height: 98vh;
     
     color: #fff;
-    min-height: 500px;
+
     
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
 }
 .home .max-width{
-  width: 100%;
+  width: 55%;
   display: flex;
 }
 .home .max-width .row{
@@ -211,9 +211,9 @@ a.github{
     font-size: 27px;
 }
 .home .home-content .text-2{
-    font-size: 75px;
+    font-size: 60px;
     font-weight: 600;
-    margin-left: -3px;
+   
     color:#ff3b3f;
 }
 .home .home-content .text-3{
