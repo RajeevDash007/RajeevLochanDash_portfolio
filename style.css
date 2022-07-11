@@ -549,10 +549,11 @@ footer span a:hover{
     .menu-btn{
         display: block;
         z-index: 999;
+        margin-right: 30px;
     }
     ul.menu.active {
         width: 550px;
-        line-height: 120px;
+        line-height: 50px;
     }
     .scroll-up-btn{
         right: 50px;
@@ -731,9 +732,3 @@ h1 {
     );
 }
 
-#myVideo {
-    
-    height: 595px;
-    width: 3000px;
-    
-  }
