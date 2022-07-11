@@ -180,12 +180,7 @@ section .title::after{
 }
 
 
-a.gfg{
-    margin-left: 20px;
-}
-a.github{
-    margin-left: 36px;
-}
+
 
 /* home section styling */
 .home{
@@ -195,13 +190,13 @@ a.github{
     
     color: #fff;
 
-    
+    max-width: 100%;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
 }
 .home .max-width{
-  width: 55%;
+  width: 100%;
   display: flex;
 }
 .home .max-width .row{
