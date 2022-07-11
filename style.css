@@ -180,17 +180,22 @@ section .title::after{
 }
 
 
-
+a.gfg{
+    margin-left: 20px;
+}
+a.github{
+    margin-left: 36px;
+}
 
 /* home section styling */
 .home{
     display:flex;
     background-color: #140b43;
-    height: 98vh;
+    height: 100vh;
     
     color: #fff;
-
-    max-width: 100%;
+    min-height: 500px;
+    
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
@@ -206,9 +211,9 @@ section .title::after{
     font-size: 27px;
 }
 .home .home-content .text-2{
-    font-size: 60px;
+    font-size: 75px;
     font-weight: 600;
-   
+    margin-left: -3px;
     color:#ff3b3f;
 }
 .home .home-content .text-3{
@@ -710,8 +715,9 @@ footer span a:hover{
 }
 
 body {
+    
     background-size: cover;
-    height:200px;
+    
     cursor: pointer;
 }
 
