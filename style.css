@@ -291,7 +291,7 @@ section .title::after{
 
 
 .services{
-    height: 700px;
+    height: 1500px;
 }
 
 
@@ -509,6 +509,8 @@ footer span a:hover{
         width: 100%;
         margin-bottom: 35px;
     }
+    
+    
 }
 
 @media (max-width: 690px) {
@@ -557,6 +559,9 @@ footer span a:hover{
         margin: 30px;
         margin-left: 40px;
     }
+    
+    
+    
 }
 
 @media (max-width: 500px) {
@@ -594,6 +599,7 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+    
 }
 
 body {
@@ -636,14 +642,14 @@ h1 {
     transform: scale(.6) translate(-50%); /* Scaled down for a better Try-it experience (change to 1 for full scale) */
     left: 50%;
     position: absolute;
-    width: 600px;
-    height: 400px;
+    width: 1350px;
+    height: 800px;
     border-radius: 6px;
     border-style: solid;
     border-color: black;
     border-width: 24px 24px 80px;
-    background-color: black;
-    margin-left: -300px;
+    background-color:whitesmoke;
+    margin-left: -200px;
   
   }
   
@@ -652,9 +658,9 @@ h1 {
     content: '';
     display: block;
     position: absolute;
-    width: 600px;
+    width: 1350px;
     height: 30px;
-    margin: -350px 0 0 -20px;
+    margin: 20px 0 0 -20px;
     background: black;
     border-radius: 6px;
   }
@@ -681,4 +687,65 @@ h1 {
     width: 1366px;
     height: 800px;
     border: none;
+  }
+
+
+  .proj-head{
+    font-size: 60px;
+    text-align: center;
+    margin-top: -80px;
+    margin-bottom: 30px;
+  }
+
+
+  .tablet {
+    position: flex;
+    width: 500px;
+    height: 1024px;
+    margin: auto;
+    border: 16px black solid;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+    transform: rotate(90deg);
+    background-color: white;    
+    
+  }
+  
+  /* The horizontal line on the top of the device */
+  .tablet:before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 10px;
+  }
+  
+  /* The circle on the bottom of the device */
+  .tablet:after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    bottom: -65px;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 50%;
+  }
+  
+  /* The screen (or content) of the device */
+  .tablet .content {
+    
+    
+  }
+
+  .work-over{
+    margin-left: 100px;
   }
